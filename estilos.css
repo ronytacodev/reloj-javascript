@@ -7,21 +7,26 @@
  }
 
  body {
-     background: url(bg.jpg) #000;
+     background: url(images/bg.jpg) #000;
      background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* margin: auto; */
      color: #fff;
      font-size: 16px;
  }
 
  .wrap {
      width: 100%;
-     max-width: 1000px;
-     /* margin: auto; */
  }
 
  .widget {
      width: 50%;
      margin: 2em;
+     margin: auto auto;
      /* margin: 32px; */
  }
 
@@ -58,4 +63,15 @@
  .reloj .ampm {
      font-size: 2rem;
      display: block;
+ }
+
+ @media (max-width: 512px) {
+     body {
+         display: block;
+     }
+
+     .widget {
+         width: 90%;
+         margin-top: 2em;
+     }
  }
